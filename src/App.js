@@ -3,7 +3,7 @@ import { Route, Switch, NavLink } from 'react-router-dom'
 
 import './App.css'
 import Github from './Github'
-import Homework from './Homework'
+import Pokemon from './Pokemon'
 
 class App extends Component {
   render() {
@@ -19,13 +19,13 @@ class App extends Component {
             <NavLink to="/github">GitHub API</NavLink>
           </li>
           <li>
-            <NavLink to="/homework">Homework</NavLink>
+            <NavLink to="/pokemon">Pokemon API</NavLink>
           </li>
         </ul>
 
         <Switch>
           <Route path="/github" component={Github} />
-          <Route path="/homework" component={Homework} />
+          <Route path="/pokemon" component={Pokemon} />
           <Route
             render={
               () => (
